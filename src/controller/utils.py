@@ -1,5 +1,5 @@
 import random
-from src.model.map import Map
+from src.model import Map
 
 
 class CoordGenerator:

@@ -1,16 +1,15 @@
 import random, time
-import src.model.map as map
-import src.model.counter as counter
-import src.view.renderer as renderer
-import src.controller.actions as actions
+from src.model import Map, Counter
+from src.view import Renderer
+from src.controller import Actions
 
 
 class Simulation:
     def __init__(self, l, w):
-        self.world_map = map.Map(l, w)
-        self.counter = counter.Counter()
-        self.renderer = renderer.Renderer(l, w)
-        self.actions = actions.Actions()
+        self.world_map = Map(l, w)
+        self.counter = Counter()
+        self.renderer =  Renderer(l, w)
+        self.actions = Actions()
 
     def prepare_simulation(self):
         for action in self.actions.init_actions:

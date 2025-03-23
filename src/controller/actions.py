@@ -1,8 +1,6 @@
 import random
-from src.model.map import Map
-import src.controller.utils as utils
-import src.model.static_entities as static_entities
-import src.model.dynamic_entities as dynamic_entities
+from src.model import Map, static_entities, dynamic_entities
+from src.controller import utils
 
 
 class Actions:
